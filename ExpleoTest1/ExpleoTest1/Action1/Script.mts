@@ -1,0 +1,3 @@
+﻿Browser("Expleo Group Stockholm").Page("Expleo Group Stockholm").Link("Nyheter").Click @@ hightlight id_;_Browser("Expleo Group Stockholm").Page("Expleo Group Stockholm").Link("Nyheter")_;_script infofile_;_ZIP::ssf1.xml_;_
+Browser("Expleo Group Stockholm").Page("Nyheter | Expleo Group").Link("Tjänster").Click @@ hightlight id_;_Browser("Expleo Group Stockholm").Page("Nyheter | Expleo Group").Link("Tjänster")_;_script infofile_;_ZIP::ssf2.xml_;_
+Browser("Expleo Group Stockholm").Page("Tjänster | Expleo Group").Link("Hem").Click @@ hightlight id_;_Browser("Expleo Group Stockholm").Page("Tjänster | Expleo Group").Link("Hem")_;_script infofile_;_ZIP::ssf3.xml_;_
