@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ResourceManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>c2ba2ced-de11-4fa1-b2c1-e3ac8d81782c</ID>
+  <Name>Flights_SO</Name>
+  <Type>WSDL</Type>
+  <Version>1</Version>
+  <CreationDate>2020-10-16T09:58:43.2571986+02:00</CreationDate>
+  <UpdateDate>2020-10-16T09:58:43.2571986+02:00</UpdateDate>
+  <LoaderID>SignatureResourceHandler</LoaderID>
+  <MetaDataSignatureFile>de410f38-0ef2-45bf-a7a1-745bf95e098a.xml</MetaDataSignatureFile>
+  <TestResourceId>de410f38-0ef2-45bf-a7a1-745bf95e098a</TestResourceId>
+  <RepositoryType>TestRepository</RepositoryType>
+  <SignatureCodonId>HP.ST.WebServiceWsdl</SignatureCodonId>
+  <SignatureAddinVersion>14.52.2173.0</SignatureAddinVersion>
+  <Properties>
+    <Item>
+      <Key>
+        <string>RepositoryPath</string>
+      </Key>
+      <Value>
+        <string>C:\Users\Fernstromj\Documents\Unified Functional Testing\UFT340\API-Test\MyFavoritCustomer\EmbeddedResources</string>
+      </Value>
+    </Item>
+    <Item>
+      <Key>
+        <string>ResourceOrigin</string>
+      </Key>
+      <Value>
+        <string>C:\Users\Fernstromj\Documents\Unified Functional Testing\UFT340\API-Test\MyFavoritCustomer\EmbeddedResources\Flights_SO</string>
+      </Value>
+    </Item>
+    <Item>
+      <Key>
+        <string>PrototypeDbVersion</string>
+      </Key>
+      <Value>
+        <string>14.52.2173.0</string>
+      </Value>
+    </Item>
+  </Properties>
+</ResourceManifest>
