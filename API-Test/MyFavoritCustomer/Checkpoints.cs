@@ -78,7 +78,7 @@ namespace Script
 
         }
         
-        private void set_StServiceCallActivity5_checkpoints(STActivityBase activity)
+        private void set_StServiceCallActivity7_checkpoints(STActivityBase activity)
         {
             VTDPropertyInfoBase stracturalOutputEnvelope = new VTDPropertyInfoBase("OutputEnvelope", "/*[local-name(.)=\'Envelope\'][1]");
             IList<VTDPropertyInfoBase> stracturalPropsInfo = new List<VTDPropertyInfoBase>();
@@ -122,6 +122,24 @@ namespace Script
             stracturalPropsInfo.Add(stracturalOutputEnvelope);
             BaseCPRule StracturalRule = new StracturalRule(activity, ExpectedSchema, stracturalPropsInfo);
             activity.AddCheckpointRule(StracturalRule);
+
+            // Checkpoint 2
+            IVTDGetter actualValueGetter2 = new VTDXPathGetter(new VTDPropertyInfoBase("OutputEnvelope", "/*[local-name(.)='Envelope'][1]/*[local-name(.)='Body'][1]/*[local-name(.)='CreateFlightOrderResponse'][1]/*[local-name(.)='CreateFlightOrderResult'][1]/*[local-name(.)='OrderNumber'][1]"), XmlTypeCode.Int, false);
+            IVTDSetter actualValueSetter2 = new VTDCheckpointSetter(XmlTypeCode.Int);
+            BindDirection actualBindDirection2 = new BindDirection(_flow.StServiceCallActivity7, actualValueGetter2, actualValueSetter2);
+            CpValObj valueActualObject2 = new CpValObj(actualBindDirection2, XmlTypeCode.Int, false);
+            CpValObj valueExpectedObject2 = new CpValObj("90", XmlTypeCode.Int);
+            ValueCPRule cpRule2 = new ValueCPRule(valueActualObject2, valueExpectedObject2, PrimitiveTypeCP.LargerThan, ">", false);
+            activity.AddCheckpointRule(cpRule2);
+
+            // Checkpoint 3
+            IVTDGetter actualValueGetter3 = new VTDXPathGetter(new VTDPropertyInfoBase("OutputEnvelope", "/*[local-name(.)='Envelope'][1]/*[local-name(.)='Body'][1]/*[local-name(.)='CreateFlightOrderResponse'][1]/*[local-name(.)='CreateFlightOrderResult'][1]/*[local-name(.)='TotalPrice'][1]"), XmlTypeCode.Float, false);
+            IVTDSetter actualValueSetter3 = new VTDCheckpointSetter(XmlTypeCode.Float);
+            BindDirection actualBindDirection3 = new BindDirection(_flow.StServiceCallActivity7, actualValueGetter3, actualValueSetter3);
+            CpValObj valueActualObject3 = new CpValObj(actualBindDirection3, XmlTypeCode.Float, false);
+            CpValObj valueExpectedObject3 = new CpValObj("300", XmlTypeCode.Float);
+            ValueCPRule cpRule3 = new ValueCPRule(valueActualObject3, valueExpectedObject3, PrimitiveTypeCP.LargerThanOrEqualTo, ">=", false);
+            activity.AddCheckpointRule(cpRule3);
 
         }
     }

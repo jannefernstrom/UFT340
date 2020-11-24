@@ -1,4 +1,7 @@
 <RuntimeResourceManager>
 <RuntimeResource><Key>{Step.GeneralProperties.StServiceCallActivity4.TransportProtocol.SOAPProperties.EndpointAddress}</Key><Path>0</Path><Value></Value><AddinId>StmDependencyResolver</AddinId></RuntimeResource>
 <RuntimeResource><Key>{Step.GeneralProperties.StServiceCallActivity5.TransportProtocol.SOAPProperties.EndpointAddress}</Key><Path>0</Path><Value></Value><AddinId>StmDependencyResolver</AddinId></RuntimeResource>
+<RuntimeResource><Key>{Step.GeneralProperties.StServiceCallActivity7.TransportProtocol.SOAPProperties.EndpointAddress}</Key><Path>0</Path><Value></Value><AddinId>StmDependencyResolver</AddinId></RuntimeResource>
+<RuntimeResource><Key>{CityPairs!Input.TablePath}</Key><Path>Local</Path><Value>C:\Users\Fernstromj\Documents\Unified Functional Testing\UFT340\API-Test\SampleAppDataXLS.xls</Value><AddinId>DataAwarenessDependencyResolver</AddinId></RuntimeResource>
+<RuntimeResource><Key>{CityPairs!Output.TablePath}</Key><Path>Local</Path><Value>C:\Users\Fernstromj\Documents\Unified Functional Testing\UFT340\API-Test\SampleAppDataXLS.xls</Value><AddinId>DataAwarenessDependencyResolver</AddinId></RuntimeResource>
 </RuntimeResourceManager>
